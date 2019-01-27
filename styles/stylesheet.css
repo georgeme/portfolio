@@ -1,0 +1,85 @@
+/*Styling for navigation*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #cc3300;
+}
+
+.navigation {
+  float: left;
+}
+
+.navigation a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navigation a:hover:not(.active) {
+  background-color: #003399;
+}
+
+.active {
+  background-color: #003300;
+}
+
+.navigation {
+  border-right: 2px solid #ffffff;
+}
+
+.navigation:last-child {
+  border-right: none;
+}
+
+/*Styling for Body color background*/
+body {
+  background-color: #ccffcc;
+}
+
+/*Styling for H1 tags*/
+h1 {
+  color: #cc3300;
+  border-style: inset;
+  border-width: 4px;
+  border-color: #e6ffe6;
+  text-align: center;
+  width: 50%;
+}
+
+/*Styling for H3 tags*/
+h3 {
+  color: #cc3300;
+  border-left: 3px solid blue;
+  background-color: #ffff66;
+  text-align: left;
+  width: 50%;
+}
+
+/*Styling for H4 tags*/
+h4 {
+  color: #cc3300;
+  border-style: double;
+  border-width: 8px;
+  border-radius: 12px;
+  border-color: #003399;
+  text-align: right;
+  width: 50%;
+}
+
+
+/*Styling for ALL paragraphs*/
+p {
+  color: #003399;
+  width: 50%;
+}
+
+
+ol {
+  list-style-type: none;
+  padding-top: 5px;
+  padding-left: 35px;
+}
