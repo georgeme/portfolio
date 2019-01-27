@@ -17,6 +17,11 @@ ul {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 22px;
+}
+
+.navigation {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navigation a:hover:not(.active) {
@@ -35,9 +40,14 @@ ul {
   border-right: none;
 }
 
-/*Styling for Body color background*/
+/*Styling for Body color background and background image*/
+
 body {
-  background-color: #ccffcc;
+  background: url("../images/autumn-leaf.png");
+  background-color: #9fdf9f;
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
 }
 
 /*Styling for H1 tags*/
@@ -66,20 +76,40 @@ h4 {
   border-width: 8px;
   border-radius: 12px;
   border-color: #003399;
-  text-align: right;
+  text-align: center;
   width: 50%;
 }
-
 
 /*Styling for ALL paragraphs*/
 p {
   color: #003399;
-  width: 50%;
+  font-size: 1.25em;
+  width: 75%;
 }
 
-
+/*Styling for the ordered lists*/
 ol {
   list-style-type: none;
   padding-top: 5px;
   padding-left: 35px;
+  background-color: #ffffff;
+  color: #cc3300;
+  border-style: inset;
+  border-width: 4px;
+  border-color: #e6ffe6;
+  width: 50%;
+}
+
+ol {
+  font-size: 1.5em;
+}
+
+/*Styling for the footer text*/
+.footer-text {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-text {
+  color: #000000;
 }
