@@ -29,7 +29,7 @@ ul {
 }
 
 .active {
-  background-color: #003300;
+  background-color: #006600;
 }
 
 .navigation {
@@ -76,7 +76,7 @@ h3 {
 }
 /* Style the icon color to match selected navigation item color */
 .fa-canadian-maple-leaf {
-  color: #003300;
+  color: #006600;
 }
 
 /*Styling for H4 tags including the color for the icon*/
@@ -90,7 +90,7 @@ h4 {
   width: 50%;
 }
 .fa-code {
-  color: #003300;
+  color: #006600;
 }
 
 /*Styling for ALL paragraphs that includes using googlefont and backup font, and the color for the icons*/
@@ -102,13 +102,13 @@ p {
   width: 75%;
 }
 .fa-book {
-  color: #003300;
+  color: #006600;
 }
 .fa-utensils {
-    color: #003300;
+    color: #006600;
 }
 .fa-film {
-      color: #003300;
+      color: #006600;
 }
 /*Styling for the ordered lists*/
 ol {
