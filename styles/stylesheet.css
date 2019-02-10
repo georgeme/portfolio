@@ -40,15 +40,19 @@ ul {
   border-right: none;
 }
 
-/*Styling for Body color background and background image*/
+/* Add a full-screen background image behind the leaf image */
+html {
+  background: url("../images/autumn-background.jpg") no-repeat center fixed;
+  background-size: cover;
+}
 
+/*Styling for Body color background and background image*/
 body {
   background: url("../images/autumn-leaf.png");
-  background-color: #9fdf9f;
   background-repeat: no-repeat;
   background-position: right top;
-  margin-right: 200px;
-  background-size: 800px 600px
+  /* margin-right: 100px; */
+  background-size: 800px 600px;
 }
 
 /*Styling for H1 tags*/
