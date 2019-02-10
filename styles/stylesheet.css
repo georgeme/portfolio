@@ -70,8 +70,12 @@ h3 {
   text-align: left;
   width: 50%;
 }
+/* Style the icon color to match selected navigation item color */
+.fa-canadian-maple-leaf {
+  color: #003300;
+}
 
-/*Styling for H4 tags*/
+/*Styling for H4 tags including the color for the icon*/
 h4 {
   color: #cc3300;
   border-style: double;
@@ -81,8 +85,11 @@ h4 {
   text-align: center;
   width: 50%;
 }
+.fa-code {
+  color: #003300;
+}
 
-/*Styling for ALL paragraphs*/
+/*Styling for ALL paragraphs that includes using googlefont and backup font, and the color for the icons*/
 p {
   font-family: Karla, Cabin, sans-serif;
   color: #003399;
@@ -90,7 +97,15 @@ p {
   font-weight: bold;
   width: 75%;
 }
-
+.fa-book {
+  color: #003300;
+}
+.fa-utensils {
+    color: #003300;
+}
+.fa-film {
+      color: #003300;
+}
 /*Styling for the ordered lists*/
 ol {
   list-style-type: none;
