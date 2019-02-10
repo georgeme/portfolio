@@ -84,6 +84,7 @@ h4 {
 
 /*Styling for ALL paragraphs*/
 p {
+  font-family: Karla, Cabin, sans-serif;
   color: #003399;
   font-size: 1.25em;
   font-weight: bold;
