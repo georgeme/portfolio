@@ -13,11 +13,20 @@ ul {
 
 .navigation a {
   display: block;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 22px;
+}
+
+.navigation a:link {
+  color: #ffffff;
+}
+
+.navigation a:visited {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .navigation {
@@ -36,6 +45,7 @@ ul {
   border-right: 2px solid #ffffff;
 }
 
+/* Last child no right border */
 .navigation:last-child {
   border-right: none;
 }
@@ -75,7 +85,7 @@ h1 {
 h3 {
   font-family: Pacifico, Molle, cursive;
   color: #cc3300;
-  border-left: 3px solid blue;
+  border-left: 3px solid #003399;
   background-color: #ffff66;
   text-align: left;
   /* width: 50%; */
@@ -99,6 +109,34 @@ h4 {
   color: #006600;
 }
 
+/* Styling for links on pages */
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #cc3300;
+}
+a:visited {
+  color: #006600;
+}
+/* Transition on link font weight */
+a:hover {
+  font-weight: bold;
+  transition-property: font-weight;
+  transition-duration: 2s;
+}
+
+/* Styling for images on page including transitions */
+img {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+          transition:         transform 2s ease-in-out;
+}
+img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 /*Styling for ALL paragraphs that includes using googlefont and backup font, and the color for the icons*/
 p {
   font-family: Karla, Cabin, sans-serif;
@@ -108,13 +146,25 @@ p {
   /* width: 50%; */
 }
 .fa-book {
-  color: #006600;
+  color: #003399;
 }
 .fa-utensils {
-    color: #006600;
+  color: #003399;
 }
 .fa-film {
-      color: #006600;
+  color: #003399;
+}
+
+.fa-wpexplorer {
+  color: #003399;
+}
+
+.fa-lightbulb {
+  color: #003399;
+}
+
+.fa-bed {
+  color: #003399;
 }
 
 /* Aside created as a flex container, this is styling and position */
@@ -128,7 +178,11 @@ p {
   margin-left: 15em;
   margin-top: 8em;
   border: 1em solid #006600;
+}
 
+/* nth child alternate color on odd */
+.flex-container li:nth-child(odd) {
+  color: #006600;
 }
 
 .favorite-h3{
