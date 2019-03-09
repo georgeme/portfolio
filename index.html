@@ -12,38 +12,63 @@
     </style>
   </head>
   <body>
+    <!-- This is the header -->
+      <header id="heading">
+        <p class="head-title">Meredith George</p>
+        <p class="head-title">Front-end Web Development Portfolio</p>
+      </header>
+
     <!--This is the navigation-->
     <ul>
       <li class="navigation"><a class="active" href="index.html">My Projects</a></li>
       <li class="navigation"><a href="about-me.html">About Me</a></li>
+      <li class="navigation"><a href="contact.html">Contact</a></li>
     </ul>
 
     <section>
       <header>
-        <h1>My Projects</h1>
+        <h1>Portfolio - My Projects</h1>
         <p>In taking the HTML & CSS class at the UW, I'm learning about semantic HTML and styling my page.</p>
       </header>
 
       <article>
         <!-- Including fontawesome icon in h3 tag -->
-        <h3><i class="fab fa-canadian-maple-leaf"></i>What projects have I been working on lately?</h3>
-        <p>I have completed some codealongs, and a couple of full projects!</p>
+        <h3><i class="fab fa-canadian-maple-leaf"></i>What am I learning in this program?</h3>
+        <p>During this first quarter, we've learned about: Git and GitHub, semantic HTML, styling with CSS, box model, flexbox and fonts, multimedia and grids, web forms, using images and backgrounds, reviewing mockups and coding to match, creating site architecture and our own mockups (and then coding to match). Still to come is DOM and accessibility. </p>
       </article>
 
       <aside>
         <h4><i class="fas fa-code"></i> My work so far includes:</h4>
           <ol>
-            <li><a href="https://github.com/georgeme/html-basics" target="_blank"><img src="images/HTML_image.PNG" width="100" height="85" alt="An image of a snippet of HTML code in the code editor Atom."> The HTML basics codealong</a></li>
-            <li><a href="https://github.com/georgeme/semantic-elements" target="_blank"><img src="images/semantic_website_image.jpg" width="100" height="85" alt="An image of a diagram of a semantic HTML Website."> Project 1 for Semantic Elements</a></li>
-            <li><a href="https://github.com/georgeme/portfolio" target="_blank"><img src="images/portfolio_image.jpg" width="100" height="85" alt="An image of an artist with their portfolio"> Project 2 for a Porfolio</a><em><small><strong> Note:</strong> The Portfolio project is ongoing so check out the changes!</small></em></li>
+            <li><a href="https://github.com/georgeme/portfolio" target="_blank"><img class="projects" src="images/portfolio_image.jpg" width="100" height="85" alt="An image of an artist with their portfolio"> Creating  a Porfolio</a></li>
+            <li><a href="https://github.com/georgeme/archery" target="_blank"><img class="projects" src="images/kitties-to-go.jpg" width="100" height="85" alt="An image of grey kitten"> Coding to Mockup</a></li>
+            <li><a href="https://github.com/georgeme/archery" target="_blank"><img class="projects" src="images/archer-with-arrow.png" width="100" height="85" alt="An image of an archery arrow"> Architecture and Design</a></li>
           </ol>
       </aside>
     </section>
 
+    <!--Creating an Aside to make it a flex container that can be positioned to the right-->
+    <aside class="flex-container">
+      <!-- Including fontawesome icon in h3 tag -->
+      <h3 class="favorite-h3"><i class="fab fa-canadian-maple-leaf"></i>See the projects on the Web!</h3>
+      <p class="favorite-p">Hosted on GitHub Pages</p>
+        <ol class="favorite-ol">
+          <li><i class="fas fa-portrait"></i><a href="https://georgeme.github.io/portfolio/" target="blank"> Creating a Portfolio</a></li>
+          <li><i class="fas fa-cat"></i><a href="https://georgeme.github.io/kitties-to-go/" target="blank"> Coding to Mockup</a></li>
+          <li><i class="fas fa-location-arrow"></i><a href="https://georgeme.github.io/archery/" target="blank"> Architecture and Design</a></li>
+        </ol>
+    </aside>
+
     <footer>
-      <p class="footer-text"><em>Created January 2019</em></p>
-      <p class="footer-text"><em>This page will be udpated as more content is available. If you would like to learn a bit more about me, go to my <a href="about-me.html">About Me</a> page.</em></p>
-    </footer>
+     <article id="left-footer">
+       <img src="images/meredith-photo.PNG" alt="LinkedIn photo of Meredith George." width="100" height="150">
+     </article>
+
+     <article id="right-footer">
+       <p class="footer-text"><em>Created 2019 by Meredith George</em></p>
+       <p class="footer-text"><em>This page will be udpated as more content is available. If you want to learn more about me, go to <a href="about-me.html">About Me</a>.</em></p>
+     </article>
+   </footer>
 
   </body>
 </html>

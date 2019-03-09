@@ -1,3 +1,32 @@
+*{
+	box-sizing: border-box;
+}
+
+/* Styling for header */
+#heading {
+	height: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+	background-color: #99cc00;
+	color: #003399;
+  margin: 0;
+	padding: 5% 13%;
+  background-image: url("../images/autumn-leaf.png");
+  background-size: 500px 300px;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.head-title {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #003399;
+	border-style: none;
+  margin: 0;
+  font-size: 2em;
+}
+
 /*Styling for navigation*/
 ul {
   list-style-type: none;
@@ -54,14 +83,6 @@ ul {
 html {
   background: url("../images/autumn-background.jpg") no-repeat center fixed;
   background-size: cover;
-}
-
-/*Styling for Body color background and background image*/
-body {
-  background: url("../images/autumn-leaf.png");
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-size: 800px 600px;
 }
 
 /* Styling for the Section to ensure it stays to the right when Aside is the left */
@@ -126,13 +147,14 @@ a:hover {
   transition-duration: 2s;
 }
 
-/* Styling for images on page including transitions */
-img {
+/* Styling for images on index page including transitions */
+.projects {
   border-radius: 50%;
   -webkit-transition: -webkit-transform 2s ease-in-out;
           transition:         transform 2s ease-in-out;
 }
-img:hover {
+
+.projects:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
@@ -143,8 +165,8 @@ p {
   color: #003399;
   font-size: 1.25em;
   font-weight: bold;
-  /* width: 50%; */
 }
+
 .fa-book {
   color: #003399;
 }
@@ -164,6 +186,18 @@ p {
 }
 
 .fa-bed {
+  color: #003399;
+}
+
+.fa-portrait {
+  color: #003399;
+}
+
+.fa-cat {
+  color: #003399;
+}
+
+.fa-location-arrow {
   color: #003399;
 }
 
@@ -216,16 +250,27 @@ ol {
   font-size: 1.5em;
 }
 
+/* Styling for footer */
 footer {
 	clear:both;
 }
 
-/*Styling for the footer text*/
-.footer-text {
-  font-size: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+footer {
+	height: 15em;
+  background-color: #99cc00;
+  display: flex;
+  justify-content: center;
+	margin: 0;
+	padding: 5% 5%;
 }
 
+#right-footer {
+  margin-left: 2em;
+}
+
+/* Styling for the footer text*/
 .footer-text {
-  color: #000000;
+  color: #003399;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
 }
