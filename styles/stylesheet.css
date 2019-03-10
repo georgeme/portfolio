@@ -318,7 +318,7 @@ fieldset.contact {
   border-style: solid;
 }
 
-/* Adding border to reason for contact fieldset */
+/* Adding border to contactReason for contact fieldset */
 .reason {
   border-style: solid;
   margin-top: 1em;
@@ -482,7 +482,7 @@ fieldset.checkbox {
   transform: rotate(45deg);
 }
 
-/* Adding border to comments fieldset */
+/* Adding border to contactComments fieldset */
 .comments {
   border-style: solid;
   margin-top: 1em;
