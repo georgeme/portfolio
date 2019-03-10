@@ -53,7 +53,7 @@
 
     <fieldset class="reason">
       <label>Reason for contact:
-        <select name="reason">
+        <select name="contactReason">
           <option value="">Please select</option>
           <option value="questions">Questions about my resume</option>
           <option value="job">Job I may be interested in</option>
@@ -66,13 +66,13 @@
     <fieldset class="radio">
       <legend>If you have a job you think I may be interested in, is it:</legend>
       <label>
-        <input type="radio" name="full" value="yes">
+        <input type="radio" name="timeFull" value="yes">
         <span class="rad"></span>
         Full Time
       </label>
 
       <label>
-        <input type="radio" name="part" value="yes">
+        <input type="radio" name="timePart" value="yes">
         <span class="rad"></span>
         Part Time
       </label>
@@ -81,34 +81,34 @@
     <fieldset class="checkbox">
       <legend>What information do you need from me?</legend>
       <label>Resume
-        <input type="checkbox" name="info" value="resume">
+        <input type="checkbox" name="needInfo" value="resume">
         <span class="checkmark"></span>
       </label>
 
       <label>Cover Letter
-        <input type="checkbox" name="info" value="cover">
+        <input type="checkbox" name="needInfo" value="cover">
         <span class="checkmark"></span>
       </label>
 
       <label>My References
-        <input type="checkbox" name="info" value="reference">
+        <input type="checkbox" name="needInfo" value="reference">
         <span class="checkmark"></span>
       </label>
 
       <label>My Contact Info
-        <input type="checkbox" name="info" value="contact">
+        <input type="checkbox" name="needInfo" value="contact">
         <span class="checkmark"></span>
       </label>
 
       <label>My LinkedIn Profile
-        <input type="checkbox" name="info" value="profile">
+        <input type="checkbox" name="needInfo" value="profile">
         <span class="checkmark"></span>
       </label>
     </fieldset>
 
     <fieldset class="comments">
       <label>Comments:
-        <textarea name="comments" rows="15" cols="150"></textarea>
+        <textarea name="contactComments" rows="15" cols="150"></textarea>
       </label>
     </fieldset>
 
