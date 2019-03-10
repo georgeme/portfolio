@@ -99,7 +99,6 @@ h1 {
   border-width: 4px;
   border-color: #e6ffe6;
   text-align: center;
-  /* width: 50%; */
 }
 
 /*Styling for H3 tags that includes using googlefont and backup font as well as styles the fontawesome icon color*/
@@ -109,8 +108,8 @@ h3 {
   border-left: 3px solid #003399;
   background-color: #ffff66;
   text-align: left;
-  /* width: 50%; */
 }
+
 /* Style the icon color to match selected navigation item color */
 .fa-canadian-maple-leaf {
   color: #006600;
@@ -124,8 +123,8 @@ h4 {
   border-radius: 12px;
   border-color: #003399;
   text-align: center;
-  /* width: 50%; */
 }
+
 .fa-code {
   color: #006600;
 }
@@ -249,6 +248,148 @@ ol {
 ol {
   font-size: 1.5em;
 }
+
+/* Styling the form on the Contact page */
+form {
+  color: #003399;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+}
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin: 1rem;
+}
+
+input[type=submit] {
+  background-color: SteelBlue;
+}
+
+input[type=password]:focus {
+  background-color: seagreen;
+  outline: none;
+}
+
+input {
+  border-radius: 5px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset input {
+  display: inline;
+}
+
+
+
+/* Radio button styling */
+/* Hide the browser's default radio styling */
+.radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* TESTING THIS */
+.radio label {
+  display: block;
+  position: relative;
+  padding-left: 2em;
+  margin-top: .5em;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+fieldset.radio {
+  border-style: solid;
+}
+/* END TEST */
+
+/* Create a custom radio button */
+
+/* Customizing the checkboxes/marks */
+/* Hide the browser's default checkbox styling */
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Customize the checkbox labels */
+.checkbox label {
+  display: block;
+  position: relative;
+  padding-left: 2em;
+  margin-top: .5em;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+fieldset.checkbox {
+  border-style: solid;
+  margin-top: 1em;
+}
+
+/* Create a custom checkbox using the span elements we created */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #b3ccff;
+}
+
+/* On checkbox mouse-over, add a grey background color */
+.checkbox label:hover input ~ .checkmark{
+  background-color: #cc3300;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox input:checked ~ .checkmark{
+  background-color: #006600;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 
 /* Styling for footer */
 footer {

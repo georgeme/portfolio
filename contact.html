@@ -20,12 +20,90 @@
 
     <!--This is the navigation-->
     <ul>
-      <li class="navigation"><a class="active" href="index.html">My Projects</a></li>
+      <li class="navigation"><a href="index.html">My Projects</a></li>
       <li class="navigation"><a href="about-me.html">About Me</a></li>
-      <li class="navigation"><a href="contact.html">Contact</a></li>
+      <li class="navigation"><a class="active" href="contact.html">Contact</a></li>
+
     </ul>
 
+<!-- Contact form -->
+    <form method="GET">
+      <h1>Contact Me</h1>
+      <p>If you would like to contact me, please complete the form below and submit it. I'm looking forward to hearing from you!</p>
+          <label>Name:
+            <input type="text" name="contactName">
+          </label>
 
+          <label>Company:
+            <input type="text" name="contactCompany">
+          </label>
+
+          <label>Email:
+            <input type="email" name="contactEmail">
+          </label>
+
+          <label>Today's date:
+            <input type="date" name="contactDate">
+          </label>
+
+          <label>Reason for contact:
+            <select name="reason">
+              <option value="">Please select</option>
+              <option value="questions">Questions about my resume</option>
+              <option value="job">Job I may be interested in</option>
+              <option value="hi">Saying "Hi"</option>
+            </select>
+          </label>
+
+          <fieldset class="radio">
+            <legend>If you have a job I may be interested in, is it:</legend>
+            <label>
+              <input type="radio" name="time" value="full">
+              <span class="rad"></span>
+              Full Time
+            </label>
+
+            <label>
+              <input type="radio" name="time" value="part">
+              <span class="rad"></span>
+              Part Time
+            </label>
+          </fieldset>
+
+          <fieldset class="checkbox">
+            <legend>What information do you need from me?</legend>
+            <label>Resume
+              <input type="checkbox" name="info" value="resume">
+              <span class="checkmark"></span>
+            </label>
+
+            <label>Cover Letter
+              <input type="checkbox" name="info" value="cover">
+              <span class="checkmark"></span>
+            </label>
+
+            <label>My References
+              <input type="checkbox" name="info" value="reference">
+              <span class="checkmark"></span>
+            </label>
+
+            <label>My Contact Info
+              <input type="checkbox" name="info" value="contact">
+              <span class="checkmark"></span>
+            </label>
+
+            <label>My LinkedIn Profile
+              <input type="checkbox" name="info" value="profile">
+              <span class="checkmark"></span>
+            </label>
+          </fieldset>
+
+          <label>Comments:
+            <textarea name="comments" rows="15" cols="150"></textarea>
+          </label>
+
+          <input type="submit" value="Submit Request">
+        </form>
 
     <footer>
      <article id="left-footer">
