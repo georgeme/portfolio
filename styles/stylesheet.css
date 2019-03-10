@@ -261,6 +261,19 @@ ol {
   font-size: 1.5em;
 }
 
+ol a:link {
+  color: #cc3300;
+}
+ol a:visited {
+  color: #006600;
+}
+/* Transition on link font weight */
+ol a:hover {
+  font-weight: bold;
+  transition-property: font-weight;
+  transition-duration: 2s;
+}
+
 /* Overall styling the form on the Contact page */
 form {
   color: #003399;
