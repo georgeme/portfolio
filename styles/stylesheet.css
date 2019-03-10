@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 }
 
-/* Styling for header */
+/* Styling for header - Green (#99cc00) background, Blue (#003399) font, single leaf image */
 #heading {
 	height: 20em;
   display: flex;
@@ -27,7 +27,7 @@
   font-size: 2em;
 }
 
-/*Styling for navigation*/
+/*Styling for navigation. Colors: Blue=#003399, Green=#99cc00, Orange=#cc3300*/
 ul {
   list-style-type: none;
   margin: 0;
@@ -92,6 +92,7 @@ section {
 	padding-left: 1%;
 	float:left;
 }
+
 /*Styling for H1 tags*/
 h1 {
   color: #cc3300;
@@ -203,7 +204,7 @@ p {
 /* Aside created as a flex container, this is styling and position */
 .flex-container {
   display: flex;
-  width: 20%;
+  width: 30%;
   float: left;
   display: inline-block;
   flex-direction: column;
@@ -249,28 +250,20 @@ ol {
   font-size: 1.5em;
 }
 
-/* Styling the form on the Contact page */
+/* Overall styling the form on the Contact page */
 form {
   color: #003399;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
   font-weight: 700;
 }
+
 button, input, select, textarea {
   font-family: inherit;
   font-size: 100%;
   box-sizing: border-box;
   display: block;
   margin: 1rem;
-}
-
-input[type=submit] {
-  background-color: SteelBlue;
-}
-
-input[type=password]:focus {
-  background-color: seagreen;
-  outline: none;
 }
 
 input {
@@ -285,9 +278,18 @@ fieldset input {
   display: inline;
 }
 
+fieldset.contact {
+  border-style: solid;
+}
 
+/* Adding border to reason for contact fieldset */
+.reason {
+  border-style: solid;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 
-/* Radio button styling */
+/* Customizing the radio buttons */
 /* Hide the browser's default radio styling */
 .radio input {
   position: absolute;
@@ -297,7 +299,7 @@ fieldset input {
   width: 0;
 }
 
-/* TESTING THIS */
+/* Radio button styling */
 .radio label {
   display: block;
   position: relative;
@@ -310,12 +312,52 @@ fieldset input {
   user-select: none;
 }
 
+/* Create the radio buttons */
+.rad {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #b3ccff;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add an orange background */
+.radio label:hover input ~ .rad{
+  background-color: #cc3300;
+}
+
+/* When selected, add a green background */
+.radio input:checked ~ .rad{
+  background-color: #006600;
+}
+
+/* Create the indicator */
+.rad:after {
+  content: "";
+  position: absolute;
+}
+
+/* Selected - show indicator */
+.radio input:checked ~ .rad:after {
+  display: block;
+}
+
+/* Style the indicator to a circle inside the radio button, make it white to show up better*/
+.radio .rad:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+/* Adding border to radio buttons fieldset */
 fieldset.radio {
   border-style: solid;
 }
-/* END TEST */
-
-/* Create a custom radio button */
 
 /* Customizing the checkboxes/marks */
 /* Hide the browser's default checkbox styling */
@@ -340,12 +382,13 @@ fieldset.radio {
   user-select: none;
 }
 
+/* Adding border to checkboxes fieldset */
 fieldset.checkbox {
   border-style: solid;
   margin-top: 1em;
 }
 
-/* Create a custom checkbox using the span elements we created */
+/* Create a custom checkbox */
 .checkmark {
   position: absolute;
   top: 0;
@@ -355,21 +398,20 @@ fieldset.checkbox {
   background-color: #b3ccff;
 }
 
-/* On checkbox mouse-over, add a grey background color */
+/* On mouse-over, add an orange background */
 .checkbox label:hover input ~ .checkmark{
   background-color: #cc3300;
 }
 
-/* When the checkbox is checked, add a blue background */
+/* When checked, add a green background */
 .checkbox input:checked ~ .checkmark{
   background-color: #006600;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
+/* Create the indicator */
 .checkmark:after {
   content: "";
   position: absolute;
-  display: none;
 }
 
 /* Show the checkmark when checked */
@@ -377,19 +419,37 @@ fieldset.checkbox {
   display: block;
 }
 
-/* Style the checkmark/indicator */
+/* Style the checkmark */
 .checkbox .checkmark:after {
   left: 9px;
   top: 5px;
   width: 5px;
-  height: 10px;
-  border: solid white;
+  height: 9px;
+  border: solid #ffffff;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
+/* Adding border to comments fieldset */
+.comments {
+  border-style: solid;
+  margin-top: 1em;
+}
+
+input[type=submit] {
+  background-color: #003399;
+  color: #ffffff;
+  border: none;
+  padding: .5em 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2em;
+  margin: .5em .5em;
+  cursor: pointer;
+}
 
 /* Styling for footer */
 footer {
