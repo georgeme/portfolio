@@ -264,6 +264,23 @@ button, input, select, textarea {
   box-sizing: border-box;
   display: block;
   margin: 1rem;
+	background-color: #b3ccff;
+}
+
+input[type=text]:focus {
+  background-color: #ffd9cc;
+}
+
+.comments textarea:focus {
+  background-color: #ffd9cc;
+}
+
+input[type=email]:focus {
+  background-color: #ffd9cc;
+}
+
+input[type=date]:focus {
+  background-color: #ffd9cc;
 }
 
 input {
@@ -272,6 +289,9 @@ input {
 
 fieldset {
   border: none;
+	box-sizing: border-box;
+  display: block;
+  margin: 1rem;
 }
 
 fieldset input {
@@ -282,11 +302,19 @@ fieldset.contact {
   border-style: solid;
 }
 
+select:focus {
+  background-color: #ffd9cc;
+}
+
 /* Adding border to reason for contact fieldset */
 .reason {
   border-style: solid;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.reason:focus {
+  background-color: #ffd9cc;
 }
 
 /* Customizing the radio buttons */
@@ -322,6 +350,13 @@ fieldset.contact {
   background-color: #b3ccff;
   border-radius: 50%;
 }
+
+/* TESTING RADIO BUTTON ON FOCUS */
+.radio input:focus ~ .rad{
+  border: solid;
+}
+
+/* END TESTING */
 
 /* On mouse-over, add an orange background */
 .radio label:hover input ~ .rad{
@@ -396,6 +431,10 @@ fieldset.checkbox {
   height: 25px;
   width: 25px;
   background-color: #b3ccff;
+}
+
+.checkbox input:focus ~ .checkmark{
+  border: solid;
 }
 
 /* On mouse-over, add an orange background */
