@@ -2,6 +2,17 @@
 	box-sizing: border-box;
 }
 
+/* ***Colors used in styling site:***
+Light Green (#99cc00)
+Dark Blue (#003399)
+Dark Orange (#cc3300)
+Dark Green (#006600)
+Light Blue (#b3ccff)
+Light Orange (#ffd9cc)
+Yellow (#ffff66)
+White (#ffffff)
+Inset border color (#e6ffe6) */
+
 /* Styling for header - Green (#99cc00) background, Blue (#003399) font, single leaf image */
 #heading {
 	height: 20em;
@@ -27,7 +38,7 @@
   font-size: 2em;
 }
 
-/*Styling for navigation. Colors: Blue=#003399, Green=#99cc00, Orange=#cc3300*/
+/*Styling for navigation. Colors: Blue (#003399), Green=(#99cc00), Orange=(#cc3300) */
 ul {
   list-style-type: none;
   margin: 0;
@@ -267,6 +278,7 @@ button, input, select, textarea {
 	background-color: #b3ccff;
 }
 
+/* Add background on FOCUS when tabbing through form fields */
 input[type=text]:focus {
   background-color: #ffd9cc;
 }
@@ -280,6 +292,10 @@ input[type=email]:focus {
 }
 
 input[type=date]:focus {
+  background-color: #ffd9cc;
+}
+
+select:focus {
   background-color: #ffd9cc;
 }
 
@@ -300,10 +316,6 @@ fieldset input {
 
 fieldset.contact {
   border-style: solid;
-}
-
-select:focus {
-  background-color: #ffd9cc;
 }
 
 /* Adding border to reason for contact fieldset */
@@ -351,12 +363,10 @@ select:focus {
   border-radius: 50%;
 }
 
-/* TESTING RADIO BUTTON ON FOCUS */
+/* Add border to radio buttons on FOCUS when tabbing through form fields */
 .radio input:focus ~ .rad{
   border: solid;
 }
-
-/* END TESTING */
 
 /* On mouse-over, add an orange background */
 .radio label:hover input ~ .rad{
@@ -433,6 +443,7 @@ fieldset.checkbox {
   background-color: #b3ccff;
 }
 
+/* Add border to checkboxes on FOCUS when tabbing through form fields */
 .checkbox input:focus ~ .checkmark{
   border: solid;
 }
@@ -477,6 +488,7 @@ fieldset.checkbox {
   margin-top: 1em;
 }
 
+/* Styling the Submit button */
 input[type=submit] {
   background-color: #003399;
   color: #ffffff;
@@ -489,6 +501,15 @@ input[type=submit] {
   margin: .5em .5em;
   cursor: pointer;
 }
+
+input[type=submit]:focus {
+  background-color: #006600;
+}
+
+input[type=submit]:hover {
+  background-color: #cc3300;
+}
+
 
 /* Styling for footer */
 footer {
