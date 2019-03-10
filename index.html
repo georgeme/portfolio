@@ -1,74 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Portfolio - My Projects</title>
-    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
-    <!-- Adding the fontawesome stylesheet to use fontawesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <!-- Adding googlefont font and backup font -->
-    <style>
-      @import url('https://fonts.googleapis.com/css?family=Cabin|Karla|Molle:400i|Pacifico');
-    </style>
-  </head>
-  <body>
-    <!-- This is the header -->
-      <header id="heading">
-        <p class="head-title">Meredith George</p>
-        <p class="head-title">Front-end Web Development Portfolio</p>
-      </header>
 
-    <!--This is the navigation-->
-    <ul>
-      <li class="navigation"><a class="active" href="index.html">My Projects</a></li>
-      <li class="navigation"><a href="about-me.html">About Me</a></li>
-      <li class="navigation"><a href="contact.html">Contact</a></li>
-    </ul>
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio - My Projects</title>
+  <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+  <!-- Adding the fontawesome stylesheet to use fontawesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- Adding googlefont font and backup font -->
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Cabin|Karla|Molle:400i|Pacifico');
+  </style>
+</head>
 
-    <section>
-      <header>
-        <h1>My Projects</h1>
-        <p>In taking the HTML & CSS class at the UW, I'm learning about semantic HTML and styling my page.</p>
-      </header>
+<body>
+  <!-- This is the header -->
+  <header id="heading">
+    <p class="head-title">Meredith George</p>
+    <p class="head-title">Front-end Web Development Portfolio</p>
+  </header>
 
-      <article>
-        <!-- Including fontawesome icon in h3 tag -->
-        <h3><i class="fab fa-canadian-maple-leaf"></i>What am I learning in this program?</h3>
-        <p>During this first quarter, we've learned about: Git and GitHub, semantic HTML, styling with CSS, box model, flexbox and fonts, multimedia and grids, web forms, using images and backgrounds, reviewing mockups and coding to match, creating site architecture and our own mockups (and then coding to match). Still to come is DOM and accessibility. </p>
-      </article>
+  <!--This is the navigation-->
+  <ul>
+    <li class="navigation"><a class="active" href="index.html">My Projects</a></li>
+    <li class="navigation"><a href="about-me.html">About Me</a></li>
+    <li class="navigation"><a href="contact.html">Contact</a></li>
+  </ul>
 
-      <aside>
-        <h4><i class="fas fa-code"></i> My work so far includes:</h4>
-          <ol>
-            <li><a href="https://github.com/georgeme/portfolio" target="_blank"><img class="projects" src="images/portfolio_image.jpg" width="100" height="85" alt="An image of an artist with their portfolio"> Creating  a Porfolio</a></li>
-            <li><a href="https://github.com/georgeme/archery" target="_blank"><img class="projects" src="images/kitties-to-go.jpg" width="100" height="85" alt="An image of grey kitten"> Coding to Mockup</a></li>
-            <li><a href="https://github.com/georgeme/archery" target="_blank"><img class="projects" src="images/archer-with-arrow.png" width="100" height="85" alt="An image of an archery arrow"> Architecture and Design</a></li>
-          </ol>
-      </aside>
-    </section>
+  <section>
+    <header>
+      <h1>My Projects</h1>
+      <p>In taking the HTML & CSS class at the UW, I'm learning about semantic HTML and styling my page.</p>
+    </header>
 
-    <!--Creating an Aside to make it a flex container that can be positioned to the right-->
-    <aside class="flex-container">
+    <article>
       <!-- Including fontawesome icon in h3 tag -->
-      <h3 class="favorite-h3"><i class="fab fa-canadian-maple-leaf"></i>See the projects on the Web!</h3>
-      <p class="favorite-p">Hosted on GitHub Pages</p>
-        <ol class="favorite-ol">
-          <li><i class="fas fa-portrait"></i><a href="https://georgeme.github.io/portfolio/" target="blank"> Creating a Portfolio</a></li>
-          <li><i class="fas fa-cat"></i><a href="https://georgeme.github.io/kitties-to-go/" target="blank"> Coding to Mockup</a></li>
-          <li><i class="fas fa-location-arrow"></i><a href="https://georgeme.github.io/archery/" target="blank"> Architecture and Design</a></li>
-        </ol>
+      <h3><i class="fab fa-canadian-maple-leaf"></i>What am I learning in this program?</h3>
+      <p>During this first quarter, we've learned about: Git and GitHub, semantic HTML, styling with CSS, box model, flexbox and fonts, multimedia and grids, web forms, using images and backgrounds, reviewing mockups and coding to match, creating
+        site architecture and our own mockups (and then coding to match). Still to come is DOM and accessibility. </p>
+    </article>
+
+    <aside>
+      <h4><i class="fas fa-code"></i> My work so far includes:</h4>
+      <ol>
+        <li><a href="https://github.com/georgeme/portfolio" target="_blank"><img class="projects" src="images/portfolio_image.jpg" width="100" height="85" alt="An image of an artist with their portfolio"> Creating a Porfolio</a></li>
+        <li><a href="https://github.com/georgeme/archery" target="_blank"><img class="projects" src="images/kitties-to-go.jpg" width="100" height="85" alt="An image of grey kitten"> Coding to Mockup</a></li>
+        <li><a href="https://github.com/georgeme/archery" target="_blank"><img class="projects" src="images/archer-with-arrow.png" width="100" height="85" alt="An image of an archery arrow"> Architecture and Design</a></li>
+      </ol>
     </aside>
+  </section>
 
-    <footer>
-     <article id="left-footer">
-       <img src="images/meredith-photo.PNG" alt="LinkedIn photo of Meredith George." width="100" height="125">
-     </article>
+  <!--Creating an Aside to make it a flex container that can be positioned to the right-->
+  <aside class="flex-container">
+    <!-- Including fontawesome icon in h3 tag -->
+    <h3 class="favorite-h3"><i class="fab fa-canadian-maple-leaf"></i>See the projects on the Web!</h3>
+    <p class="favorite-p">Hosted on GitHub Pages</p>
+    <ol class="favorite-ol">
+      <li><i class="fas fa-portrait"></i><a href="https://georgeme.github.io/portfolio/" target="blank"> Creating a Portfolio</a></li>
+      <li><i class="fas fa-cat"></i><a href="https://georgeme.github.io/kitties-to-go/" target="blank"> Coding to Mockup</a></li>
+      <li><i class="fas fa-location-arrow"></i><a href="https://georgeme.github.io/archery/" target="blank"> Architecture and Design</a></li>
+    </ol>
+  </aside>
 
-     <article id="right-footer">
-       <p class="footer-text"><em>Created 2019 by Meredith George</em></p>
-       <p class="footer-text"><em>This page will be udpated as more content is available. If you want to learn more about me, go to <a href="about-me.html">About Me</a>.</em></p>
-     </article>
-   </footer>
+  <footer>
+    <article id="left-footer">
+      <img src="images/meredith-photo.PNG" alt="LinkedIn photo of Meredith George." width="100" height="125">
+    </article>
 
-  </body>
+    <article id="right-footer">
+      <p class="footer-text"><em>Created 2019 by Meredith George</em></p>
+      <p class="footer-text"><em>This page will be updated as more content is available. If you want to learn more about me, go to <a href="about-me.html">About Me</a>. To contact me, fill out <a href="contact.html">this form</a>.</em></p>
+    </article>
+  </footer>
+
+</body>
+
 </html>
