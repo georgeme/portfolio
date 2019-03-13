@@ -90,7 +90,7 @@ ul {
   border-right: none;
 }
 
-/* Add a full-screen background image behind the leaf image */
+/* Add a full-screen background image */
 html {
   background: url("../images/autumn-background.jpg") no-repeat center fixed;
   background-size: cover;
