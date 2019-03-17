@@ -3,24 +3,45 @@
 }
 
 /* ***Colors used in styling site:***
-Light Green (#99cc00)
-Dark Blue (#003399)
-Dark Orange (#cc3300)
-Dark Green (#006600)
+Light Green (#9fdf9f)
+Dark Blue (#002570)
+Dark Orange (#6b1b00)
+Dark Green (#004200)
 Light Blue (#b3ccff)
 Light Orange (#ffd9cc)
-Yellow (#ffff66)
-White (#ffffff)
-Inset border color (#e6ffe6) */
+White (#ffffff) */
 
-/* Styling for header - Green (#99cc00) background, Blue (#003399) font, single leaf image */
+/* Styling the skip link on each page */
+.hidden {
+  position: relative;
+  left: -10000px;
+  top: auto;
+}
+
+.hidden:focus {
+  left: 0;
+	color: #000000;
+	font-weight: 700;
+}
+
+/* Setting screenreader-only text styling */
+.sr-only {
+  position: absolute;
+  left: -1000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Styling for header - Green (#9fdf9f) background, Blue (#002570) font, single leaf image */
 #heading {
 	height: 20em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-	background-color: #99cc00;
-	color: #003399;
+	background-color: #9fdf9f;
+	color: #002570;
   margin: 0;
 	padding: 5% 13%;
   background-image: url("../images/autumn-leaf.png");
@@ -32,19 +53,19 @@ Inset border color (#e6ffe6) */
 .head-title {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  color: #003399;
+  color: #002570;
 	border-style: none;
   margin: 0;
   font-size: 2em;
 }
 
-/*Styling for navigation. Colors: Blue (#003399), Green=(#99cc00), Orange=(#cc3300) */
+/*Styling for navigation. Colors: Blue (#002570), Green=(#9fdf9f), Orange=(#6b1b00) */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #cc3300;
+  /* background-color: #6b1b00; */
 }
 
 .navigation {
@@ -53,20 +74,20 @@ ul {
 
 .navigation a {
   display: block;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
-  padding: 14px 16px;
+  padding: .75em .75em;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 1.5em;
 }
 
 .navigation a:link {
-  color: #ffffff;
+  color: #000000;
 }
 
 .navigation a:visited {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
 }
 
 .navigation {
@@ -74,15 +95,17 @@ ul {
 }
 
 .navigation a:hover:not(.active) {
-  background-color: #003399;
+  background-color: #002570;
+	color: #ffffff;
 }
 
 .active {
-  background-color: #006600;
+  background-color: #004200;
+	color: #ffffff;
 }
 
 .navigation {
-  border-right: 2px solid #ffffff;
+  border-right: 3px solid #004200;
 }
 
 /* Last child no right border */
@@ -92,8 +115,7 @@ ul {
 
 /* Add a full-screen background image */
 html {
-  background: url("../images/autumn-background.jpg") no-repeat center fixed;
-  background-size: cover;
+	background-color: #9fdf9f;
 }
 
 /* Styling for the Section to ensure it stays to the right when Aside is the left */
@@ -106,39 +128,32 @@ section {
 
 /*Styling for H1 tags*/
 h1 {
-  color: #cc3300;
-  border-style: inset;
-  border-width: 4px;
-  border-color: #e6ffe6;
+  color: #6b1b00;
+	font-family: Montserrat, Raleway, sans-serif;
   text-align: center;
 }
 
 /*Styling for H3 tags that includes using googlefont and backup font as well as styles the fontawesome icon color*/
 h3 {
-  font-family: Pacifico, Molle, cursive;
-  color: #cc3300;
-  border-left: 3px solid #003399;
-  background-color: #ffff66;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #6b1b00;
   text-align: left;
 }
 
 /* Style the icon color to match selected navigation item color */
 .fa-canadian-maple-leaf {
-  color: #006600;
+  color: #004200;
 }
 
 /*Styling for H4 tags including the color for the icon*/
 h4 {
-  color: #cc3300;
-  border-style: double;
-  border-width: 8px;
-  border-radius: 12px;
-  border-color: #003399;
+  color: #6b1b00;
+  font-family: Montserrat, Raleway, sans-serif;
   text-align: center;
 }
 
 .fa-code {
-  color: #006600;
+  color: #004200;
 }
 
 /* Styling for links on pages */
@@ -146,10 +161,10 @@ a {
   text-decoration: none;
 }
 a:link {
-  color: #cc3300;
+  color: #6b1b00;
 }
 a:visited {
-  color: #006600;
+  color: #004200;
 }
 /* Transition on link font weight */
 a:hover {
@@ -173,43 +188,43 @@ a:hover {
 /*Styling for ALL paragraphs that includes using googlefont and backup font, and the color for the icons*/
 p {
   font-family: Karla, Cabin, sans-serif;
-  color: #003399;
+  color: #002570;
   font-size: 1.25em;
   font-weight: bold;
 }
 
 .fa-book {
-  color: #003399;
+  color: #002570;
 }
 .fa-utensils {
-  color: #003399;
+  color: #002570;
 }
 .fa-film {
-  color: #003399;
+  color: #002570;
 }
 
 .fa-wpexplorer {
-  color: #003399;
+  color: #002570;
 }
 
 .fa-lightbulb {
-  color: #003399;
+  color: #002570;
 }
 
 .fa-bed {
-  color: #003399;
+  color: #002570;
 }
 
 .fa-portrait {
-  color: #003399;
+  color: #002570;
 }
 
 .fa-cat {
-  color: #003399;
+  color: #002570;
 }
 
 .fa-location-arrow {
-  color: #003399;
+  color: #002570;
 }
 
 /* Aside created as a flex container, this is styling and position */
@@ -222,12 +237,12 @@ p {
   align-items: flex-start;
   margin-left: 15em;
   margin-top: 8em;
-  border: 1em solid #006600;
+  border: 1em solid #004200;
 }
 
 /* nth child alternate color on odd */
 .flex-container li:nth-child(odd) {
-  color: #006600;
+  color: #004200;
 }
 
 .favorite-h3{
@@ -250,7 +265,7 @@ ol {
   padding-top: 5px;
   padding-left: 35px;
   background-color: #ffffff;
-  color: #cc3300;
+  color: #6b1b00;
   border-style: inset;
   border-width: 4px;
   border-color: #e6ffe6;
@@ -262,10 +277,10 @@ ol {
 }
 
 ol a:link {
-  color: #cc3300;
+  color: #6b1b00;
 }
 ol a:visited {
-  color: #006600;
+  color: #004200;
 }
 /* Transition on link font weight */
 ol a:hover {
@@ -276,7 +291,7 @@ ol a:hover {
 
 /* Overall styling the form on the Contact page */
 form {
-  color: #003399;
+  color: #002570;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
   font-weight: 700;
@@ -294,22 +309,32 @@ button, input, select, textarea {
 /* Add background on FOCUS when tabbing through form fields */
 input[type=text]:focus {
   background-color: #ffd9cc;
+	border: solid;
+	border-color: #002570;
 }
 
 .comments textarea:focus {
   background-color: #ffd9cc;
+	border: solid;
+	border-color: #002570;
 }
 
 input[type=email]:focus {
   background-color: #ffd9cc;
+	border: solid;
+	border-color: #002570;
 }
 
 input[type=date]:focus {
   background-color: #ffd9cc;
+	border: solid;
+	border-color: #002570;
 }
 
 select:focus {
   background-color: #ffd9cc;
+	border: solid;
+	border-color: #002570;
 }
 
 input {
@@ -383,12 +408,12 @@ fieldset.contact {
 
 /* On mouse-over, add an orange background */
 .radio label:hover input ~ .rad{
-  background-color: #cc3300;
+  background-color: #6b1b00;
 }
 
 /* When selected, add a green background */
 .radio input:checked ~ .rad{
-  background-color: #006600;
+  background-color: #004200;
 }
 
 /* Create the indicator */
@@ -463,12 +488,12 @@ fieldset.checkbox {
 
 /* On mouse-over, add an orange background */
 .checkbox label:hover input ~ .checkmark{
-  background-color: #cc3300;
+  background-color: #6b1b00;
 }
 
 /* When checked, add a green background */
 .checkbox input:checked ~ .checkmark{
-  background-color: #006600;
+  background-color: #004200;
 }
 
 /* Create the indicator */
@@ -503,7 +528,7 @@ fieldset.checkbox {
 
 /* Styling the Submit button */
 input[type=submit] {
-  background-color: #003399;
+  background-color: #002570;
   color: #ffffff;
   border: none;
   padding: .5em 1em;
@@ -516,11 +541,11 @@ input[type=submit] {
 }
 
 input[type=submit]:focus {
-  background-color: #006600;
+  background-color: #004200;
 }
 
 input[type=submit]:hover {
-  background-color: #cc3300;
+  background-color: #6b1b00;
 }
 
 
@@ -531,7 +556,7 @@ footer {
 
 footer {
 	height: 15em;
-  background-color: #99cc00;
+  background-color: #9fdf9f;
   display: flex;
   justify-content: center;
 	margin: 0;
@@ -544,7 +569,7 @@ footer {
 
 /* Styling for the footer text*/
 .footer-text {
-  color: #003399;
+  color: #002570;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
 }
